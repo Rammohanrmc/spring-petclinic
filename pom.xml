@@ -383,6 +383,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.13</version>
 				<configuration>
+					      <argLine>-XX:MaxPermSize=512m</argLine>
 					<includes>
 						<include>**/*Tests.java</include>
 					</includes>
@@ -393,7 +394,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
-					<warName>petclinic</warName>
+					<warName>petclinijac</warName>
 				</configuration>
 			</plugin>
 			<plugin>
