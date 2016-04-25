@@ -165,6 +165,15 @@
     <version>2.5</version>
 </dependency>
 
+<dependency>
+   <groupId>com.sun</groupId>
+   <artifactId>tools</artifactId>
+   <version>1.7</version>
+   <scope>system</scope>
+   <systemPath>/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar</systemPath>
+ </dependency>
+
+
 		<!-- Database connection pool 
 		See here for more details on commons-dbcp versus tomcat-jdbc: 
     	http://blog.ippon.fr/2013/03/13/improving-the-performance-of-the-spring-petclinic-sample-application-part-3-of-5/
