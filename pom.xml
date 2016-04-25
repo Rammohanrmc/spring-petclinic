@@ -220,7 +220,7 @@
    <artifactId>tools</artifactId>
    <version>1.7</version>
    <scope>system</scope>
-   <systemPath>/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar</systemPath>
+   <systemPath>usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar</systemPath>
  </dependency>
 
 		<!-- Databases - Uses HSQL by default -->
@@ -463,6 +463,16 @@
                           <artifactId>maven-resources-plugin</artifactId>
                           <version>2.7</version>
                          </plugin>   
+                         
+             <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>usr/lib/jvm/java-7-openjdk-amd64/jre/bin/javac.exe</executable>
+            </configuration>
+        </plugin>
+                         
                          
                    </plugins>
 	</build>
