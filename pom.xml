@@ -215,6 +215,14 @@
 			<version>${jodatime-jsptags.version}</version>
 		</dependency>
 
+<dependency>
+   <groupId>com.sun</groupId>
+   <artifactId>tools</artifactId>
+   <version>1.7</version>
+   <scope>system</scope>
+   <systemPath>/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar</systemPath>
+ </dependency>
+
 		<!-- Databases - Uses HSQL by default -->
 		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> <version>${mysql.version}</version> </dependency> -->
 		<dependency>
