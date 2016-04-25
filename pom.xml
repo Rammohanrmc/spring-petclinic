@@ -464,13 +464,10 @@
                           <version>2.7</version>
                          </plugin>   
                          
-             <plugin>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version>
-            <configuration>
-                <fork>true</fork>
-                <executable>${java.home}/jre/bin/javac.exe</executable>
-            </configuration>
+        <plugin>
+            <inherited>true</inherited>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId> 
         </plugin>
                          
                          
